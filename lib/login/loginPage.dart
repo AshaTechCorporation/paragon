@@ -8,6 +8,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:paragon/constants.dart';
 import 'package:paragon/home/firstPage.dart';
+import 'package:paragon/login/forgotPassword.dart';
+import 'package:paragon/login/registerPage.dart';
 import 'package:paragon/login/services/loginController.dart';
 import 'package:paragon/utils/formattedMessage.dart';
 import 'package:paragon/widgets/AlertDialogYesNo.dart';
@@ -280,7 +282,7 @@ class _LoginPageState extends State<LoginPage> {
                                 children: [
                                   GestureDetector(
                                     onTap: () {
-                                      //Navigator.push(context, MaterialPageRoute(builder: (context) => RegisterPage()));
+                                      Navigator.push(context, MaterialPageRoute(builder: (context) => RegisterPage()));
                                     },
                                     child: Text(
                                       'ลงทะเบียนเข้าใช้งาน',
@@ -297,7 +299,7 @@ class _LoginPageState extends State<LoginPage> {
                                 children: [
                                   GestureDetector(
                                     onTap: () {
-                                      //Navigator.push(context, MaterialPageRoute(builder: (context) => ForgotPassword()));
+                                      Navigator.push(context, MaterialPageRoute(builder: (context) => ForgotPassword()));
                                     },
                                     child: Text(
                                       'ลืมรหัสผ่าน',
