@@ -38,7 +38,7 @@ class _AccountExpireState extends State<AccountExpire> {
                       },
                     ),
                     Text(
-                      context.locale == Locale('th') ? 'เอกสาร PM' : 'Document',
+                      'เอกสาร PM',
                       style: TextStyle(
                         color: kTextHeadColor,
                         fontSize: 25,
@@ -60,7 +60,10 @@ class _AccountExpireState extends State<AccountExpire> {
               ),
               Text(
                 'Account Expire',
-                style: TextStyle(color: kTextHeadColor, fontSize: 25, fontWeight: FontWeight.bold),
+                style: TextStyle(
+                    color: kTextHeadColor,
+                    fontSize: 25,
+                    fontWeight: FontWeight.bold),
               ),
               Text(
                 ' Please contact admin',
@@ -84,7 +87,7 @@ class _AccountExpireState extends State<AccountExpire> {
                     //       builder: (context) => Contectpage(),
                     //     ));
                   },
-                  buttonName: context.locale == Locale('th') ? 'ติดต่อเจ้าหน้าที่' : 'Contact staff',
+                  buttonName: 'ติดต่อเจ้าหน้าที่',
                 ),
               ),
             ],

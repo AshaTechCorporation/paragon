@@ -42,7 +42,7 @@ const double defaultPadding = 16.0;
 // const String publicUrl = 'powertech-control-api.dev-asha.com';
 // const String pubUrl = 'https://powertech-control-api.dev-asha.com';
 const String publicUrl = 'power-pm-api.dev-asha.com:8443';
-const String pubUrl = 'https://power-pm-api.dev-asha.com:8443';
+const String pubUrl = 'https://power-pm-api.dev-asha.com';
 
 bool isPhone(BuildContext context) => MediaQuery.of(context).size.shortestSide < 550;
 

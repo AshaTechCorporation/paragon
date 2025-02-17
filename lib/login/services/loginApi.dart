@@ -13,13 +13,13 @@ class LoginApi {
 
   //login
   static Future<Auth> login(String email, String password, String device_no, String notify_token) async {
-    final url = Uri.https(publicUrl, '/api/login');
-    final response = await http.post(url, body: convert.jsonEncode({
+    final url = Uri.https(publicUrl, 'api/login');
+    final response = await http.post(url, body: {
       'email': email,
       'password': password,
       'device_no': device_no,
       'notify_token': notify_token,
-    }));
+    });
     if (response.statusCode == 200) {
       final data = convert.jsonDecode(response.body);
       return Auth.fromJson(data);

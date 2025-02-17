@@ -25,7 +25,8 @@ class PdfDocumentPage extends StatefulWidget {
 }
 
 class _PdfDocumentPageState extends State<PdfDocumentPage> {
-  final Completer<PDFViewController> _controller = Completer<PDFViewController>();
+  final Completer<PDFViewController> _controller =
+      Completer<PDFViewController>();
   int? pages = 0;
   int? currentPage = 0;
   bool isReady = false;
@@ -79,13 +80,15 @@ class _PdfDocumentPageState extends State<PdfDocumentPage> {
       }
       if (await directory.exists()) {
         File saveFile = File(directory.path + "/$fileName");
-        await dio.download(url, saveFile.path, onReceiveProgress: (value1, value2) {
+        await dio.download(url, saveFile.path,
+            onReceiveProgress: (value1, value2) {
           setState(() {
             progress = value1 / value2;
           });
         });
         if (Platform.isIOS) {
-          await ImageGallerySaver.saveFile(saveFile.path, isReturnPathOfIOS: true);
+          await ImageGallerySaver.saveFile(saveFile.path,
+              isReturnPathOfIOS: true);
         }
         return true;
       }
@@ -122,18 +125,23 @@ class _PdfDocumentPageState extends State<PdfDocumentPage> {
     return SafeArea(
       child: Scaffold(
         appBar: PreferredSize(
-          preferredSize: Size.fromHeight(isPhone(context) ? size.height * 0.14 : size.height * 0.10),
+          preferredSize: Size.fromHeight(
+              isPhone(context) ? size.height * 0.14 : size.height * 0.10),
           child: Container(
             height: isPhone(context) ? size.height * 0.14 : size.height * 0.11,
             width: double.infinity,
             decoration: BoxDecoration(
-              image: DecorationImage(image: AssetImage('assets/images/appBar_pic.png'), fit: BoxFit.fill),
+              image: DecorationImage(
+                  image: AssetImage('assets/images/red_appBar_pic.png'),
+                  fit: BoxFit.fill),
             ),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 Padding(
-                  padding: EdgeInsets.symmetric(vertical: size.height * 0.015, horizontal: size.width * 0.01),
+                  padding: EdgeInsets.symmetric(
+                      vertical: size.height * 0.015,
+                      horizontal: size.width * 0.01),
                   child: BackButtonOnClick(
                     size: size,
                     press: () {
@@ -142,12 +150,18 @@ class _PdfDocumentPageState extends State<PdfDocumentPage> {
                   ),
                 ),
                 Text(
-                  context.locale == Locale('th') ? 'เอกสาร PM' : 'Document',
-                  style: TextStyle(color: kTextHeadColor, fontSize: isPhone(context) ? 24 : 35, fontWeight: FontWeight.bold),
+                  'เอกสาร PM',
+                  style: TextStyle(
+                      color: kTextHeadColor,
+                      fontSize: isPhone(context) ? 24 : 35,
+                      fontWeight: FontWeight.bold),
                 ),
                 SizedBox(
-                  height: isPhone(context) ? size.height * 0.05 : size.height * 0.07,
-                  width: isPhone(context) ? size.width * 0.12 : size.width * 0.14,
+                  height: isPhone(context)
+                      ? size.height * 0.05
+                      : size.height * 0.07,
+                  width:
+                      isPhone(context) ? size.width * 0.12 : size.width * 0.14,
                 )
               ],
             ),
@@ -334,15 +348,19 @@ class _PdfDocumentPageState extends State<PdfDocumentPage> {
                       crossAxisAlignment: CrossAxisAlignment.center,
                       children: [
                         Padding(
-                          padding: EdgeInsets.symmetric(horizontal: size.width * 0.02),
+                          padding: EdgeInsets.symmetric(
+                              horizontal: size.width * 0.02),
                           child: Image.asset(
                             'assets/icons/dowmload.png',
                             scale: 20,
                           ),
                         ),
                         Text(
-                          context.locale == Locale('th') ? 'ดาวน์โหลดเอกสาร' : 'Download documents',
-                          style: TextStyle(color: kButtonContainerColor, fontSize: isPhone(context) ? 16.39 : 25, fontWeight: FontWeight.bold),
+                          'ดาวน์โหลดเอกสาร',
+                          style: TextStyle(
+                              color: kButtonContainerColor,
+                              fontSize: isPhone(context) ? 16.39 : 25,
+                              fontWeight: FontWeight.bold),
                         )
                       ],
                     ),

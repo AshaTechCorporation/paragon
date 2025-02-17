@@ -59,6 +59,7 @@ dependencies:
   pull_to_refresh_flutter3: ^2.0.2
   url_launcher: ^6.1.14
   adaptive_dialog: ^1.9.0+2
+  flutter_html: ^3.0.0-alpha.5
 
   #สไลบราลี่ที่ใช้ในการติดต่อ เอพีไอ และสร้างโมเดลข้อมูล
   build_runner: ^2.4.9

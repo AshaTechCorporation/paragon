@@ -231,7 +231,7 @@ class _HomePageState extends State<HomePage> {
                 width: double.infinity,
                 decoration: BoxDecoration(
                   image: DecorationImage(
-                      image: AssetImage('assets/images/appBar_pic.png'),
+                      image: AssetImage('assets/images/red_appBar_pic.png'),
                       fit: BoxFit.fill),
                 ),
                 child: Row(
@@ -254,9 +254,7 @@ class _HomePageState extends State<HomePage> {
                       ),
                     ),
                     Text(
-                      context.locale == Locale('th')
-                          ? 'ตารางงานช่าง'
-                          : 'Mechanical work',
+                      'ตารางงานช่าง',
                       style: TextStyle(
                           color: kTextHeadColor,
                           fontSize: isPhone(context) ? 24 : 35,
@@ -355,9 +353,7 @@ class _HomePageState extends State<HomePage> {
                         mainAxisAlignment: MainAxisAlignment.start,
                         children: [
                           Text(
-                            context.locale == Locale('th')
-                                ? 'รายการงานวันนี้'
-                                : "Today's work list",
+                            'รายการงานวันนี้',
                             style: TextStyle(
                                 color: kTextSecondaryColor,
                                 fontSize: isPhone(context) ? 20 : 30,

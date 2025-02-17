@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:paragon/home/firstPage.dart';
 import 'package:paragon/home/services/homeController.dart';
+import 'package:paragon/job/services/jobController.dart';
 import 'package:paragon/login/loginPage.dart';
 import 'package:paragon/login/services/loginController.dart';
 import 'package:provider/provider.dart';
@@ -36,7 +37,7 @@ class MyApp extends StatelessWidget {
       providers: [
         ChangeNotifierProvider(create: (context) => LoginController()),
         ChangeNotifierProvider(create: (context) => HomeController()),
-        // ChangeNotifierProvider(create: (context) => JobController()),
+        ChangeNotifierProvider(create: (context) => JobController()),
       ],
       child: MaterialApp(
         title: 'Flutter Demo',
