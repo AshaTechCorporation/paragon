@@ -80,66 +80,66 @@ class _LoginPageState extends State<LoginPage> {
                         SizedBox(
                           height: size.height * 0.05,
                         ),
-                        Padding(
-                          padding: EdgeInsets.symmetric(horizontal: size.width * 0.07),
-                          child: Row(
-                            mainAxisAlignment: MainAxisAlignment.end,
-                            crossAxisAlignment: CrossAxisAlignment.center,
-                            children: [
-                              Transform.scale(
-                                scale: isPhone(context) ? 1 : 1.5,
-                                child: DropdownButton<String>(
-                                  value: dropdownValue,
-                                  alignment: AlignmentDirectional.centerEnd,
-                                  //isDense: true,
-                                  //isExpanded: true,
-                                  //icon: Icon(Icons.keyboard_arrow_down, color: kNaviPrimaryColor,),
-                                  icon: Icon(
-                                    Icons.keyboard_arrow_down,
-                                    color: kNaviPrimaryColor,
-                                    size: 30,
-                                  ),
-                                  dropdownColor: kDropDownColor,
-                                  elevation: 16,
-                                  style: TextStyle(color: kNaviPrimaryColor),
-                                  underline: Container(
-                                    height: 2,
-                                    //color: Colors.deepPurpleAccent,
-                                  ),
-                                  onChanged: (String? value) {
-                                    // This is called when the user selects an item.
-                                    setState(() {
-                                      dropdownValue = value;
-                                      context.setLocale(Locale(dropdownValue!));
-                                    });
-                                  },
-                                  items: list.map<DropdownMenuItem<String>>((String value) {
-                                    return DropdownMenuItem<String>(
-                                      value: value,
-                                      child: Row(
-                                        children: [
-                                          value == 'th'
-                                              ? Text('ไทย',
-                                                  style: TextStyle(
-                                                    color: kNaviPrimaryColor,
-                                                    fontSize: isPhone(context) ? 20.57 : 25,
-                                                  ),
-                                                  textAlign: TextAlign.right)
-                                              : Text('English',
-                                                  style: TextStyle(
-                                                    color: kNaviPrimaryColor,
-                                                    fontSize: isPhone(context) ? 20.57 : 25,
-                                                  ),
-                                                  textAlign: TextAlign.right),
-                                        ],
-                                      ),
-                                    );
-                                  }).toList(),
-                                ),
-                              ),
-                            ],
-                          ),
-                        ),
+                        // Padding(
+                        //   padding: EdgeInsets.symmetric(horizontal: size.width * 0.07),
+                        //   child: Row(
+                        //     mainAxisAlignment: MainAxisAlignment.end,
+                        //     crossAxisAlignment: CrossAxisAlignment.center,
+                        //     children: [
+                        //       Transform.scale(
+                        //         scale: isPhone(context) ? 1 : 1.5,
+                        //         child: DropdownButton<String>(
+                        //           value: dropdownValue,
+                        //           alignment: AlignmentDirectional.centerEnd,
+                        //           //isDense: true,
+                        //           //isExpanded: true,
+                        //           //icon: Icon(Icons.keyboard_arrow_down, color: kNaviPrimaryColor,),
+                        //           icon: Icon(
+                        //             Icons.keyboard_arrow_down,
+                        //             color: kNaviPrimaryColor,
+                        //             size: 30,
+                        //           ),
+                        //           dropdownColor: kDropDownColor,
+                        //           elevation: 16,
+                        //           style: TextStyle(color: kNaviPrimaryColor),
+                        //           underline: Container(
+                        //             height: 2,
+                        //             //color: Colors.deepPurpleAccent,
+                        //           ),
+                        //           onChanged: (String? value) {
+                        //             // This is called when the user selects an item.
+                        //             setState(() {
+                        //               dropdownValue = value;
+                        //               context.setLocale(Locale(dropdownValue!));
+                        //             });
+                        //           },
+                        //           items: list.map<DropdownMenuItem<String>>((String value) {
+                        //             return DropdownMenuItem<String>(
+                        //               value: value,
+                        //               child: Row(
+                        //                 children: [
+                        //                   value == 'th'
+                        //                       ? Text('ไทย',
+                        //                           style: TextStyle(
+                        //                             color: kNaviPrimaryColor,
+                        //                             fontSize: isPhone(context) ? 20.57 : 25,
+                        //                           ),
+                        //                           textAlign: TextAlign.right)
+                        //                       : Text('English',
+                        //                           style: TextStyle(
+                        //                             color: kNaviPrimaryColor,
+                        //                             fontSize: isPhone(context) ? 20.57 : 25,
+                        //                           ),
+                        //                           textAlign: TextAlign.right),
+                        //                 ],
+                        //               ),
+                        //             );
+                        //           }).toList(),
+                        //         ),
+                        //       ),
+                        //     ],
+                        //   ),
+                        // ),
                         // Padding(
                         //   padding: EdgeInsets.symmetric(horizontal: size.width * 0.07),
                         //   child: Row(
@@ -157,7 +157,7 @@ class _LoginPageState extends State<LoginPage> {
                         //   ),
                         // ),
                         Image.asset(
-                          "assets/images/123640.jpg",
+                          "assets/images/user_image_20250217_11332671108af0061.png",
                         ),
                         Padding(
                           padding: EdgeInsets.symmetric(horizontal: size.width * 0.08),
