@@ -44,6 +44,9 @@ const double defaultPadding = 16.0;
 const String publicUrl = 'power-pm-api.dev-asha.com:8443';
 const String pubUrl = 'https://power-pm-api.dev-asha.com';
 
+const String part_image = 'assets/images/appBar_pic_modified.png';
+const String part_bg_image = 'assets/images/background4_2_0.png';
+
 bool isPhone(BuildContext context) => MediaQuery.of(context).size.shortestSide < 550;
 
 SizedBox kDefaultHSpacing(BuildContext context) {

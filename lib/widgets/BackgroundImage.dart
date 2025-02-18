@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:paragon/constants.dart';
 
 class BackgroundImage extends StatelessWidget {
   const BackgroundImage({
@@ -8,7 +9,7 @@ class BackgroundImage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Image.asset(
-      "assets/images/red_background.png",
+      "$part_bg_image",
       height: MediaQuery.of(context).size.height,
       width: MediaQuery.of(context).size.width,
       fit: BoxFit.fill,

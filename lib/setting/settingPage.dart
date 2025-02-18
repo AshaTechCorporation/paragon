@@ -98,7 +98,7 @@ class _SettingPageState extends State<SettingPage> {
             height: isPhone(context) ? size.height * 0.14 : size.height * 0.10,
             width: double.infinity,
             decoration: BoxDecoration(
-              image: DecorationImage(image: AssetImage('assets/images/red_appBar_pic.png'), fit: BoxFit.fill),
+              image: DecorationImage(image: AssetImage('$part_image'), fit: BoxFit.fill),
             ),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,

@@ -64,7 +64,7 @@ class _ContectpageState extends State<Contectpage> {
             width: double.infinity,
             decoration: BoxDecoration(
               image: DecorationImage(
-                  image: AssetImage('assets/images/red_appBar_pic.png'),
+                  image: AssetImage('$part_image'),
                   fit: BoxFit.fill),
             ),
             child: Row(

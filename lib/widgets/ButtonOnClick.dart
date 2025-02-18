@@ -18,7 +18,7 @@ class ButtonOnClick extends StatelessWidget {
     return GestureDetector(
       onTap: press,
       child: Card(
-        color: kTextDateColor,
+        color: kStatusEndColor,
         elevation: 5,
         shape: RoundedRectangleBorder(
           // side: BorderSide(

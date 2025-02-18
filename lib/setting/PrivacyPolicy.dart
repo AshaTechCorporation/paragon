@@ -69,7 +69,7 @@ class _PrivacyPolicyState extends State<PrivacyPolicy> {
             width: double.infinity,
             decoration: BoxDecoration(
               image: DecorationImage(
-                  image: AssetImage('assets/images/red_appBar_pic.png'),
+                  image: AssetImage('$part_image'),
                   fit: BoxFit.fill),
             ),
             child: Row(
