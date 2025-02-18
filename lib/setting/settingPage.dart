@@ -298,26 +298,26 @@ class _SettingPageState extends State<SettingPage> {
                         Navigator.push(context, MaterialPageRoute(builder: (context) => ResetPassword()));
                       },
                     ),
-                    SizedBox(
-                      height: size.height * 0.02,
-                    ),
-                    ContainerSetting(
-                      size: size,
-                      leadingIcon: 'assets/icons/material-symbols_help-outline.png',
-                      title: 'เปลี่ยนภาษา',
-                      trailingIcon: 'assets/icons/ion_chevron-back.png',
-                      press: () async {
-                        final resdata = await showDialog(
-                          barrierDismissible: false,
-                          context: context,
-                          builder: (context) => AlertDialogLocale(
-                            pressYes: () {
-                              Navigator.pop(context, true);
-                            },
-                          ),
-                        );
-                      },
-                    ),
+                    // SizedBox(
+                    //   height: size.height * 0.02,
+                    // ),
+                    // ContainerSetting(
+                    //   size: size,
+                    //   leadingIcon: 'assets/icons/material-symbols_help-outline.png',
+                    //   title: 'เปลี่ยนภาษา',
+                    //   trailingIcon: 'assets/icons/ion_chevron-back.png',
+                    //   press: () async {
+                    //     final resdata = await showDialog(
+                    //       barrierDismissible: false,
+                    //       context: context,
+                    //       builder: (context) => AlertDialogLocale(
+                    //         pressYes: () {
+                    //           Navigator.pop(context, true);
+                    //         },
+                    //       ),
+                    //     );
+                    //   },
+                    // ),
 
                     SizedBox(
                       height: size.height * 0.02,

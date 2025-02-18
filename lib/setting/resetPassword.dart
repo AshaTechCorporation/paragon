@@ -242,7 +242,7 @@ class _ResetPasswordState extends State<ResetPassword> {
                         }
                       }
                     },
-                    buttonName: context.locale == Locale('th') ? 'บันทึก' : 'Confirm',
+                    buttonName: 'บันทึก',
                   ),
                 ],
               ),

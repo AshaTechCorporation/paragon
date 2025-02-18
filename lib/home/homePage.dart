@@ -10,6 +10,7 @@ import 'package:paragon/job/services/jobApi.dart';
 import 'package:paragon/job/services/jobController.dart';
 import 'package:paragon/models/job.dart';
 import 'package:paragon/models/user.dart';
+import 'package:paragon/setting/settingPage.dart';
 import 'package:paragon/utils/formattedMessage.dart';
 import 'package:paragon/widgets/AlertDialogYesNo.dart';
 import 'package:paragon/widgets/ButtonAppbar.dart';
@@ -244,12 +245,12 @@ class _HomePageState extends State<HomePage> {
                       child: ButtonAppbar(
                         size: size,
                         press: () async {
-                          // final go = await Navigator.push(
-                          //     context,
-                          //     MaterialPageRoute(
-                          //         builder: (context) => SettingPage()));
-                          // if (go == true) {
-                          // } else {}
+                          final go = await Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) => SettingPage()));
+                          if (go == true) {
+                          } else {}
                         },
                       ),
                     ),
